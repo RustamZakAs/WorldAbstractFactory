@@ -38,6 +38,7 @@ namespace WorldAbstractFactory
             List<Herbivore> herbivoresList = new List<Herbivore>();
             herbivoresList.Add(new Wildebeest());
             herbivoresList.Add(new Bison());
+            herbivoresList.Add(new Elk());
 
             List<Herbivore> createdHerbivoresList = new List<Herbivore>();
 
@@ -298,7 +299,7 @@ namespace WorldAbstractFactory
         }
     }
 
-    public abstract class Elk : Herbivore
+    public abstract class Elk : Herbivore //Лось : Травоядное животное
     {
         public Elk()
         {
@@ -312,7 +313,7 @@ namespace WorldAbstractFactory
         }
     }
 
-    public abstract class Tiger : Carnivore
+    public abstract class Tiger : Carnivore //Тигр : Хищники
     {
         public override void Eat(Herbivore herbivore)
         {
