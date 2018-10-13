@@ -299,7 +299,7 @@ namespace WorldAbstractFactory
         }
     }
 
-    public abstract class Elk : Herbivore //Лось : Травоядное животное
+    public class Elk : Herbivore //Лось : Травоядное животное
     {
         public Elk()
         {
